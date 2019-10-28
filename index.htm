@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Huang Jiayi - Welcome! My Personal Site</title>
+    <meta name="description" content="Huang Jiayi's Personal site">
+    <meta name="keywords" content="Huang Jiayi Software Engineer Zhejiang China">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    
+    <link rel="icon" href="./favicon.ico" mce_href="./favicon.icns" type="image/x-icon">  
+    <link rel="shortcut icon" href="./favicon.ico" mce_href="./favicon.icns" type="image/x-icon"> 
+
+    <link href="./assets/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <style type="text/css">
+        @font-face {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 300;
+            src: url(./assets/Lato-Light.ttf) format('truetype')
+        }
+        
+        @font-face {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 700;
+            src: url(./assets/Lato-Bold.ttf) format('truetype')
+        }
+        
+        .sprite {
+            background: url(./assets/sprite.png) no-repeat 0 0;
+            background-size: 180px 140px
+        }
+        .fa, .fas, .far, .fal, .fad, .fab {
+        font-size: 18px;
+        }
+        .links a{
+            color: white;
+            font-size: 24px;
+            text-decoration-line: none;
+            background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(rgba(255, 255,255,0.8)));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      transition: all .2s ease-in-out;
+            -moz-transition:all .2s ease-in-out;	/* Firefox 4 */
+            -webkit-transition:all .2s ease-in-out;	/* Safari 和 Chrome */
+            -o-transition:all .2s ease-in-out;
+        }
+
+        .links a:hover{
+            color: white;
+            background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(rgba(255, 255,255,1)));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+            transition: all .2s ease-in-out;
+            -moz-transition:all .2s ease-in-out;	/* Firefox 4 */
+            -webkit-transition:all .2s ease-in-out;	/* Safari 和 Chrome */
+            -o-transition:all .2s ease-in-out;
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:2),
+        only screen and (min-device-pixel-ratio:2) {
+            .sprite {
+                background: url(./assets/sprite@2x.png) no-repeat 0 0;
+                background-size: 180px 140px
+            }
+        }
+        
+        .profile {
+            width: 60px;
+            height: 60px;
+            background-position: 0 0
+        }
+        
+        .map {
+            width: 160px;
+            height: 80px;
+            background-position: 0 -60px
+        }
+        
+        .twitter {
+            width: 30px;
+            height: 30px;
+            background-position: -60px 0;
+            transition: all .2s ease-in-out;
+            -moz-transition:all .2s ease-in-out;	/* Firefox 4 */
+            -webkit-transition:all .2s ease-in-out;	/* Safari 和 Chrome */
+            -o-transition:all .2s ease-in-out;
+        }
+        .twitter:hover {
+            background:url("./assets/mail-icon-32.png") no-repeat;
+            transition: all .2s ease-in-out;
+            -moz-transition:all .2s ease-in-out;	/* Firefox 4 */
+            -webkit-transition:all .2s ease-in-out;	/* Safari 和 Chrome */
+            -o-transition:all .2s ease-in-out;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+        
+        html {
+            -webkit-text-size-adjust: 100%
+        }
+        
+        body,
+        html {
+            height: 100%
+        }
+        
+        body {
+            min-width: 320px;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            font-family: Lato, sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 11pt;
+            background: #171F26;
+            color: #FFF
+        }
+        
+        .wrapper {
+            width: 100%;
+            max-width: 360px;
+            margin: auto 6.25%;
+            padding: 30px 0
+        }
+        
+        .top:after,
+        .top:before {
+            content: " ";
+            display: table
+        }
+        
+        .top:after {
+            clear: both
+        }
+        
+        .profile {
+            float: left
+        }
+        
+        .map {
+            float: right;
+            position: relative
+        }
+        
+        #location {
+            width: 6px;
+            height: 6px;
+            position: absolute;
+            left: 125px;
+            top: 35px;
+            border-radius: 3px;
+            background-color: #FFF
+        }
+        
+        .headline {
+            font-weight: 700;
+            font-size: 1.8em;
+            line-height: 1.1em
+        }
+        
+        .subheadline {
+            font-weight: 300;
+            font-size: 1.12em;
+            line-height: 1.4em;
+            margin: 6px 0 22px 0;
+            padding-left: 10px;
+            color: #BABCBE;
+            border-left: 5px solid #0E83CD
+        }
+        
+        .links {
+            margin: 0 0 45px 0
+        }
+        
+        .links a {
+            margin-right: 4px;
+            display: inline-block;
+            -webkit-tap-highlight-color: transparent
+        }
+        
+        .footnote {
+            font-size: .95em;
+            color: #BABCBE
+        }
+    </style>
+    <style>
+        @media print {
+            #ghostery-purple-box {
+                display: none !important
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="top">
+                <div class="sprite profile"></div>
+                <div class="sprite map">
+                    <div id="location"></div>
+                </div>
+            </div>
+            <h1 class="headline">Huang Jiayi</h1>
+            <h2 class="subheadline">
+                IT Dept. Manager - Jiaxing Zhejiang, CN</h2>
+        </header>
+        <div class="links">
+            <ul>
+                <i>
+                    <a href="https://hjy.me"  target="_blank" class="fab fa-wordpress"></a>
+                </i> 
+                <i>
+                    <a href="mailto:hi@huangjiayi.net"  target="_blank" class="fas fa-at"></a>
+                </i> 
+                <i >
+                    <a href="#"  class="fab fa-github"></a>
+                </i>
+              
+                <i >
+                    <a href="https://facebook.com/huang1989/"  target="_blank" class="fab fa-facebook"></a>
+                </i> 
+                <i >
+                    <a href="https://weibo.com/hjy1205/"  target="_blank" class="fab fa-weibo"></a>
+                </i> 
+                <i>
+                        <a href="https://twitter.com/ihhuuaanngg/"  target="_blank" class="fab fa-twitter"></a>
+                </i>
+            </ul>
+        </div>
+        <footer>
+            <p class="footnote">© 2019 Huang Jiayi. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
