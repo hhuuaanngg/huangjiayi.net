@@ -8,11 +8,13 @@
     <meta name="description" content="Huang Jiayi's Personal site">
     <meta name="keywords" content="Huang Jiayi Software Engineer Zhejiang China">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-    
-    <link rel="icon" href="./favicon.ico" mce_href="./favicon.icns" type="image/x-icon">  
-    <link rel="shortcut icon" href="./favicon.ico" mce_href="./favicon.icns" type="image/x-icon"> 
 
-    <link href="./assets/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <link rel="icon" href="./favicon.ico" mce_href="./favicon.icns" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" mce_href="./favicon.icns" type="image/x-icon">
+
+    <link href="./assets/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
+    <!--load all styles -->
     <style type="text/css">
         @font-face {
             font-family: Lato;
@@ -20,48 +22,60 @@
             font-weight: 300;
             src: url(./assets/Lato-Light.ttf) format('truetype')
         }
-        
+
         @font-face {
             font-family: Lato;
             font-style: normal;
             font-weight: 700;
             src: url(./assets/Lato-Bold.ttf) format('truetype')
         }
-        
+
         .sprite {
             background: url(./assets/sprite.png) no-repeat 0 0;
             background-size: 180px 140px
         }
-        .fa, .fas, .far, .fal, .fad, .fab {
-        font-size: 18px;
+
+        .fa,
+        .fas,
+        .far,
+        .fal,
+        .fad,
+        .fab {
+            font-size: 18px;
         }
-        .links a{
+
+        .links a {
             color: white;
             font-size: 24px;
             text-decoration-line: none;
-            background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(rgba(255, 255,255,0.8)));
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-
-      transition: all .2s ease-in-out;
-            -moz-transition:all .2s ease-in-out;	/* Firefox 4 */
-            -webkit-transition:all .2s ease-in-out;	/* Safari 和 Chrome */
-            -o-transition:all .2s ease-in-out;
-        }
-
-        .links a:hover{
-            color: white;
-            background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(rgba(255, 255,255,1)));
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+            background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(rgba(255, 255, 255, 0.8)));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
 
             transition: all .2s ease-in-out;
-            -moz-transition:all .2s ease-in-out;	/* Firefox 4 */
-            -webkit-transition:all .2s ease-in-out;	/* Safari 和 Chrome */
-            -o-transition:all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            /* Firefox 4 */
+            -webkit-transition: all .2s ease-in-out;
+            /* Safari 和 Chrome */
+            -o-transition: all .2s ease-in-out;
         }
+
+        .links a:hover {
+            color: white;
+            background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(rgba(255, 255, 255, 1)));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            /* Firefox 4 */
+            -webkit-transition: all .2s ease-in-out;
+            /* Safari 和 Chrome */
+            -o-transition: all .2s ease-in-out;
+        }
+
         @media only screen and (-webkit-min-device-pixel-ratio:2),
         only screen and (min-device-pixel-ratio:2) {
             .sprite {
@@ -69,51 +83,56 @@
                 background-size: 180px 140px
             }
         }
-        
+
         .profile {
             width: 60px;
             height: 60px;
             background-position: 0 0
         }
-        
+
         .map {
             width: 160px;
             height: 80px;
             background-position: 0 -60px
         }
-        
+
         .twitter {
             width: 30px;
             height: 30px;
             background-position: -60px 0;
             transition: all .2s ease-in-out;
-            -moz-transition:all .2s ease-in-out;	/* Firefox 4 */
-            -webkit-transition:all .2s ease-in-out;	/* Safari 和 Chrome */
-            -o-transition:all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            /* Firefox 4 */
+            -webkit-transition: all .2s ease-in-out;
+            /* Safari 和 Chrome */
+            -o-transition: all .2s ease-in-out;
         }
+
         .twitter:hover {
-            background:url("./assets/mail-icon-32.png") no-repeat;
+            background: url("./assets/mail-icon-32.png") no-repeat;
             transition: all .2s ease-in-out;
-            -moz-transition:all .2s ease-in-out;	/* Firefox 4 */
-            -webkit-transition:all .2s ease-in-out;	/* Safari 和 Chrome */
-            -o-transition:all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            /* Firefox 4 */
+            -webkit-transition: all .2s ease-in-out;
+            /* Safari 和 Chrome */
+            -o-transition: all .2s ease-in-out;
         }
-        
+
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0
         }
-        
+
         html {
             -webkit-text-size-adjust: 100%
         }
-        
+
         body,
         html {
             height: 100%
         }
-        
+
         body {
             min-width: 320px;
             display: -webkit-flex;
@@ -127,33 +146,33 @@
             background: #171F26;
             color: #FFF
         }
-        
+
         .wrapper {
             width: 100%;
             max-width: 360px;
             margin: auto 6.25%;
             padding: 30px 0
         }
-        
+
         .top:after,
         .top:before {
             content: " ";
             display: table
         }
-        
+
         .top:after {
             clear: both
         }
-        
+
         .profile {
             float: left
         }
-        
+
         .map {
             float: right;
             position: relative
         }
-        
+
         #location {
             width: 6px;
             height: 6px;
@@ -163,13 +182,13 @@
             border-radius: 3px;
             background-color: #FFF
         }
-        
+
         .headline {
             font-weight: 700;
             font-size: 1.8em;
             line-height: 1.1em
         }
-        
+
         .subheadline {
             font-weight: 300;
             font-size: 1.12em;
@@ -179,17 +198,17 @@
             color: #BABCBE;
             border-left: 5px solid #0E83CD
         }
-        
+
         .links {
             margin: 0 0 45px 0
         }
-        
+
         .links a {
             margin-right: 4px;
             display: inline-block;
             -webkit-tap-highlight-color: transparent
         }
-        
+
         .footnote {
             font-size: .95em;
             color: #BABCBE
@@ -217,35 +236,103 @@
             </div>
             <h1 class="headline">Huang Jiayi</h1>
             <h2 class="subheadline">
-                IT Dept. Manager - Jiaxing Zhejiang, CN</h2>
+                    <div class="typewrite" data-period="2000" data-type='[ "Hi, I am IT Dept. Manager - Jiaxing Zhejiang, CN.", "I am Wordpress Lover.", "I Love Design.", "I Love to Develop." ]'>
+                            <span class="wrap"></span>
+                    </div>
+                </h2>
         </header>
         <div class="links">
             <ul>
                 <i>
-                    <a href="https://hjy.me"  target="_blank" class="fab fa-wordpress"></a>
-                </i> 
-                <i>
-                    <a href="mailto:hi@huangjiayi.net"  target="_blank" class="fas fa-at"></a>
-                </i> 
-                <i >
-                    <a href="#"  class="fab fa-github"></a>
+                    <a href="https://hjy.me" target="_blank" class="fab fa-wordpress"></a>
                 </i>
-              
-                <i >
-                    <a href="https://facebook.com/huang1989/"  target="_blank" class="fab fa-facebook"></a>
-                </i> 
-                <i >
-                    <a href="https://weibo.com/hjy1205/"  target="_blank" class="fab fa-weibo"></a>
-                </i> 
                 <i>
-                        <a href="https://twitter.com/ihhuuaanngg/"  target="_blank" class="fab fa-twitter"></a>
+                    <a href="mailto:hi@huangjiayi.net" target="_blank" class="fas fa-at"></a>
+                </i>
+                <i>
+                    <a href="#" class="fab fa-github"></a>
+                </i>
+
+                <i>
+                    <a href="https://facebook.com/huang1989/" target="_blank" class="fab fa-facebook"></a>
+                </i>
+                <i>
+                    <a href="https://weibo.com/hjy1205/" target="_blank" class="fab fa-weibo"></a>
+                </i>
+                <i>
+                    <a href="https://twitter.com/ihhuuaanngg/" target="_blank" class="fab fa-twitter"></a>
                 </i>
             </ul>
         </div>
+
+
+        
+
         <footer>
             <p class="footnote">© 2019 Huang Jiayi. All rights reserved.</p>
         </footer>
     </div>
+        <script>
+            var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 100;
+        //  - Math.random() * 100;
+
+        if (this.isDeleting) { delta /=4; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 100;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+        </script>
+
+
 </body>
 
 </html>
